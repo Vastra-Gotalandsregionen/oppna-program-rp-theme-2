@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	$theme.include($top_head_include)
+	
+	<link rel="stylesheet" type="text/css" href="$css_folder/responsive.css" />
+</head>
+
+<body class="$css_class $css_rp_admin">
+
+#if($showDockbar)
+	<div id="dockbarWrap">
+		#dockbar()	
+	</div>
+#end
+
+
+<div id="wrapper">
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<header id="banner" role="banner">
+		<div class="header-inner">
+			<hgroup id="heading" class="clearfix">
+				
+				<h1 class="company-title">
+					<a class="logo" href="$company_url" title="#language("go-to") $company_name">
+						<span>$company_name</span>
+					</a>
+				</h1>
+				
+				#parse ("$full_templates_path/top_navigation.vm")
+				
+				<h1 class="company-title company-title-responsive">
+					<a class="logo" href="$company_url" title="#language("go-to") $company_name">
+						<span>$company_name</span>
+					</a>
+				</h1>
+				
+				<a href="navigationTrigger" id="navigationTrigger"><span>Meny</span></a>
+			</hgroup>
+	
+			#if ($update_available_url)
+				<div class="popup-alert-notice">
+					<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
+				</div>
+			#end
+	
+			#if ($has_navigation)
+				#parse ("$full_templates_path/navigation.vm")
+			#end
+		</div>
+	</header>
+
+	<div id="content">
+		<div class="content-inner">
+			#if ($selectable)
+			
+				#if($show_breadcrumbs)
+					#parse ("$full_templates_path/breadcrumbs.vm")
+				#end
+			
+				$theme.include($content_include)
+				<div id="toolsSidebar" class="tools-sidebar">
+					#if($show_notifications_portlet)
+						#parse ("$full_templates_path/notifications.vm")
+					#end
+					#if($is_signed_in)
+						#parse ("$full_templates_path/tyck-till-content.vm")
+					#end
+				</div>
+			#else
+				$portletDisplay.recycle()
+	
+				$portletDisplay.setTitle($the_title)
+	
+				$theme.wrapPortlet("portlet.vm", $content_include)
+			#end
+		</div>
+	</div>
+	
+</div>
+
+<footer id="footer" role="contentinfo">
+	#parse ("$full_templates_path/footer.vm")
+</footer>
+
+</body>
+
+$theme.include($bottom_include)
+
+#parse ("$full_templates_path/theme_js_bottom.vm")
+
+</html>
