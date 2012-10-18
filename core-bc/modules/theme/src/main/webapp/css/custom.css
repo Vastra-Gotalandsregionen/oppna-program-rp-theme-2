@@ -3250,7 +3250,8 @@ ul.notfications-bar-list li a .count {
 	left: 0px;
 	padding: 2px;
 	position: absolute;
-	top: 0px;	
+	top: 0px;
+	z-index: 1; /* fix IE8 */
 }
 
 ul.notfications-bar-list li a .count span {
