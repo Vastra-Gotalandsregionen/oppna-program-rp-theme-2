@@ -14,7 +14,7 @@
 	<name>Regionportalen Theme 2</name>
 	<version>1.2-SNAPSHOT</version>
 	<build>
-		<finalName>regionportalen-theme-2</finalName>
+		<finalName>regionportalen2-theme</finalName>
 		<plugins>
 			<plugin>
 				<groupId>com.liferay.maven.plugins</groupId>
