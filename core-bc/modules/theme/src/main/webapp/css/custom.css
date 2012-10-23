@@ -3555,7 +3555,7 @@ a.vap-link-button:visited {
 .ie6 .vap-search-wrap input[type="text"],
 .ie7 .vap-search-wrap input[type="text"] {
 	/* Fixes issue with box overflow when setting width 100% and padding, borders, margin etc for ie6 and ie7 */
-	behavior: url(/vgr-alfa-theme/htc/boxsizing.htc);
+	behavior: url(/regionportalen-theme-2/htc/boxsizing.htc);
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
