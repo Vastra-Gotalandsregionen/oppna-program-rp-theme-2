@@ -1,11 +1,11 @@
-AUI().add('rp-theme-alfa',function(A) {
+AUI().add('rp-theme-2',function(A) {
     var Lang = A.Lang,
         
-        NAME = 'rp-theme-alfa',
-        NS = 'rp-theme-alfa'
+        NAME = 'rp-theme-2',
+        NS = 'rp-theme-2'
     ;
     
-    var RpThemeAlfa = A.Component.create(
+    var RpTheme2 = A.Component.create(
             {
                 ATTRS: {
                     
@@ -205,7 +205,7 @@ AUI().add('rp-theme-alfa',function(A) {
             }
     );
 
-    A.RpThemeAlfa = RpThemeAlfa;
+    A.RpTheme2 = RpTheme2;
         
     },1, {
         requires: [

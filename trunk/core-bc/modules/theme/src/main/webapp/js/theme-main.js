@@ -18,8 +18,8 @@ function addCssClassName(node, cssClassName) {
 	}
 }
 
-AUI().ready('rp-theme-alfa', function(A) {
-	var rpThemeAlfa = new A.RpThemeAlfa().render();;
+AUI().ready('rp-theme-2', function(A) {
+	var rpTheme2 = new A.RpTheme2().render();;
 });
 
 Liferay.on('allPortletsReady',function() {
