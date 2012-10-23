@@ -107,7 +107,7 @@ body {
 
 .company-title-responsive,
 #banner .company-title-responsive .logo {
-	width: 162px;
+	float: none;
 }
 
 #banner .company-title .logo {
@@ -118,8 +118,6 @@ body {
 }
 
 #banner .company-title-responsive .logo {
-	background-position: 0 -50px;
-	height: 22px;
 }
 
 .company-title-responsive {
@@ -1375,6 +1373,10 @@ li.vgr-list-view-item .ft {
 	margin: 5px 0;
 }
 
+li.vgr-list-view-item .ft {
+	margin-bottom: 0;
+}
+
 li.vgr-list-view-item .hd h3 {
 	float: left;
 	margin: 0;
@@ -2319,6 +2321,10 @@ ul.section-navigation-list li a .description {
 	border: none;
 }
 
+.portlet-blogs .header-back-to {
+	display: none;
+}
+
 .portlet-blogs .blogs-entries-wrap {}
 
 .portlet-blogs .blogs-entries-wrap .entry {
@@ -2397,6 +2403,10 @@ ul.section-navigation-list li a .description {
 .portlet-blogs .stats .comments a:hover,
 portlet-blogs .taglib-flags span a:hover {
 	text-decoration: underline;
+}
+
+.portlet-blogs .view-count {
+	display: none;
 }
 
 .portlet-blogs .taglib-social-bookmarks {
@@ -3626,7 +3636,7 @@ a.vap-link-button:visited {
 	box-shadow: 0px 1px 4px 0px #cccccc;	
 	/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 	color: #333;
-	font-size: 2.2em;
+	font-size: 1.5em;
 	margin: 10px 0 30px 0;
 	padding: 12px;
 	position: relative;	

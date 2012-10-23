@@ -153,6 +153,16 @@ ul.top-nav-list .top-nav-quick-access {
 	display: none;
 }
 
+.company-title-responsive,
+#banner .company-title-responsive .logo {
+	width: 162px;
+}
+
+#banner .company-title-responsive .logo {
+	background-position: 0 -50px;
+	height: 22px;
+}
+
 #banner .company-title .server-node-info  {
 	display: none;
 }
