@@ -10,3 +10,6 @@
 core-bc/modules/theme/target/*
 core-bc/modules/theme/.settings/*
 
+_sprite.properties
+_sprite.png
+_sprite.gif
