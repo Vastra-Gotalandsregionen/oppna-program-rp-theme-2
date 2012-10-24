@@ -1600,7 +1600,6 @@ li.vgr-list-view-item .hd h3 a:hover {
 
 .system-help-overlay .aui-overlay-content {
 	background: #e4edf9;
-	/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 	-moz-border-radius: 3px 0 0 3px;
 	-webkit-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px;	
@@ -3328,7 +3327,7 @@ ul.notfications-bar-list li a:hover {
 
 .notifications-overlay .aui-overlay-content {
 	background: #e4edf9;
-	/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
+	background: #fff;
 	-moz-border-radius: 3px 0 0 3px;
 	-webkit-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px;	
