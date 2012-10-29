@@ -34,13 +34,13 @@
 ##
 
 #set ($rp_navigation_portlet_id = "rpnavigationportlet_WAR_rpnavigationportlet")
-#set ($rp_navigation_portlet_id = "aggregatednavigation_WAR_oppnaprogramnavigationportlet" )
+#set ($rp_navigation_portlet_id = "aggregatednavigation_WAR_navigationportlet" )
 
 ##
 ## RP Breadcrumbs Portlet
 ##
 #set ($use_rp_breadcrumbs_portlet = true)
-#set ($rp_breadcrumbs_portlet_id = "aggregatedbreadcrumbs_WAR_oppnaprogramnavigationportlet" )
+#set ($rp_breadcrumbs_portlet_id = "aggregatedbreadcrumbs_WAR_navigationportlet" )
 
 
 ##
@@ -97,6 +97,13 @@
 
 #set ($notifications_portlet_id = $notifications_portlet_stub_id)
 #set ($notifications_portlet_id = $notifications_portlet_prod_id)
+
+##
+## Login Link Portlet
+##
+
+#set ($loginlink_portlet_id = "loginlink_WAR_navigationportlet")
+
 
 ##
 ## RP Admin

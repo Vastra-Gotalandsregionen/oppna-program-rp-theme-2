@@ -494,6 +494,10 @@ ul.top-nav-list li a.active {
 	color: #fff;
 }
 
+ul.top-nav-list li .login-link-portlet > a {
+    padding: 0px;
+}
+
 
 /*------- Main navigation -------*/
 
