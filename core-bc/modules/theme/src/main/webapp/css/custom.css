@@ -1,4 +1,3 @@
-
 /*
 @author:	Erik Andersson
 @date:		2011-04-05
@@ -1915,7 +1914,16 @@ li.vgr-list-view-item .hd h3 a:hover {
 	font-size: 11px;
 }
 
-.portlet-icon-back {
+a.portlet-icon-back,
+a.portlet-icon-back:hover {
+	background: none;
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+}
+
+a.portlet-icon-back:hover {
+	text-decoration: underline;
 }
 
 .ie .portlet-title {
