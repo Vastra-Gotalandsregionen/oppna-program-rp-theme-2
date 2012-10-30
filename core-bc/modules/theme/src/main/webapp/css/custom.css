@@ -3418,7 +3418,8 @@ ul.notifications-list .notification-usd-type {
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 	/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
-	font-size: inherit;
+	line-height: 20px;
+	font-size: 12px;
 	height: 20px;
 	text-indent: 0;
 	width: 14px;
