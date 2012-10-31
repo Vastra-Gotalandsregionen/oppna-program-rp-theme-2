@@ -160,11 +160,13 @@
 ##
 ## Piwik
 ##
-
-#set ($piwik_active = false)
+#set($piwikActive = false)
 #if ($propsUtil.get("web.tracking.piwik.active") == "true")
 	#set ($piwik_active = true)
+#elseif ($propsUtil.get("web.tracking.piwik.active") == true)
+	#set ($piwik_active = true)
 #end
+
 
 #set ($piwik_base_url = "piwik.vgregion.se/" )
 #set ($protocol_url_prefix = "http://")

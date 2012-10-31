@@ -31,17 +31,17 @@
 			<hgroup id="heading" class="clearfix">
 				
 				<h1 class="company-title">
-					<a class="logo" href="$company_url" title="#language("go-to") $company_name">
+					<span class="logo">
 						<span>$company_name</span>
-					</a>
+					</span>
 				</h1>
 				
 				#parse ("$full_templates_path/top_navigation.vm")
 				
 				<h1 class="company-title company-title-responsive">
-					<a class="logo" href="$company_url" title="#language("go-to") $company_name">
+					<span class="logo">
 						<span>$company_name</span>
-					</a>
+					</span>
 				</h1>
 				
 				<a href="navigationTrigger" id="navigationTrigger"><span>Meny</span></a>
