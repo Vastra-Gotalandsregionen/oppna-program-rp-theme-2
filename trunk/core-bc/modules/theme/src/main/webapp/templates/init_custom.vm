@@ -157,3 +157,19 @@
 #set ($is_server_test = $stringUtil.contains($portalURL, $url_server_test, ""))
 #set ($is_server_stage = $stringUtil.contains($portalURL, $url_server_stage, ""))
 
+##
+## Piwik
+##
+
+#set ($piwik_active = false)
+#if ($propsUtil.get("web.tracking.piwik.active") == "true")
+	#set ($piwik_active = true)
+#end
+
+#set ($piwik_base_url = "piwik.vgregion.se/" )
+#set ($protocol_url_prefix = "http://")
+#if($themeDisplay.isSecure())
+	#set ($protocol_url_prefix = "https://")	
+#end	
+#set ($piwik_url = $protocol_url_prefix + $piwik_base_url)
+#set ($piwik_site_id = 77 )
