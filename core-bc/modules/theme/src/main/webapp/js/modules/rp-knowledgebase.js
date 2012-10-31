@@ -98,7 +98,14 @@ AUI().add('rp-knowledgebase',function(A) {
                         	url = url.replace('/group/', '/widget/group/');
                         }
                         else {
-                        	url = url.replace('/web/', '/widget/web/');	
+                        	url = url.replace('/web/', '/widget/web/');
+                        	/*
+                        	if(url.contains('/web/')) {
+                        		url = url.replace('/web/', '/widget/web/');	
+                        	} else if (url.contains('vap.vgregion.se/')) {
+                        		url = url.replace('vap.vgregion.se/', 'vap.vgregion.se/widget/web/');
+                        	}
+                        	*/
                         }
                     
                         var dialogHeight = 500;
