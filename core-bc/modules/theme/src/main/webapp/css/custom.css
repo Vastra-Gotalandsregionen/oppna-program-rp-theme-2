@@ -228,7 +228,7 @@ a#sidebarHelpTrigger:hover {
 .footer-content {
 }
 
-#footer a.logo {
+#footer .logo {
     background: url(../images/logo/vgr-logo-large-transparent.png) no-repeat scroll 0 0 transparent;
     display: block;
 	font-size: 0;
@@ -238,7 +238,7 @@ a#sidebarHelpTrigger:hover {
     width: 252px;
 }
 
-#footer a.logo span {
+#footer .logo span {
     font-size: 0;
     text-indent: -9999em;
 }
@@ -2197,7 +2197,7 @@ ul.section-navigation-list li a .description {
 /* Enhance readability, line lenght, line height and font-size */
 .knowledge-base-portlet-display .kb-entity-body,
 .knowledge-base-portlet-aggregator .kb-entity-body {
-  text-align: justify;
+  text-align: left;
   
   /*
   line-height: 1.7;

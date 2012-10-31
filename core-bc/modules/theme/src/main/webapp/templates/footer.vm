@@ -1,8 +1,8 @@
 <div class="footer-inner">
 	<div class="footer-content clearfix">
-		<a class="logo" href="$company_url">
+		<span class="logo">
 			<span>$region_portal_name</span>
-		</a>
+		</span>
 		#if($is_server_local || $is_server_test || $is_server_stage)
     		<div class="server-info">
         		#if($is_server_local)
