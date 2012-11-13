@@ -24,7 +24,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                 ATTRS: {
                 	
                 	createFromMainNavigation: {
-                		value: false
+                		value: true
                 	},
                 	
                 	filterInputId: {
@@ -99,12 +99,17 @@ AUI().add('rp-quick-access-nav',function(A) {
                     	
                     	var quickAccessNavNode = mainNavList.cloneNode(true);
                     	
-                    	// Set correct class name for main list
-                    	quickAccessNavNode.removeAttribute('class', '');
-                    	quickAccessNavNode.addClass('quick-access-nav-list clearfix');
+                    	// Remove all fourth level lists (third level sublist)
+                    	var fourthLevelLists = quickAccessNavNode.all('ul.nav-list-sub-3');
+                    	fourthLevelLists.remove();
                     	
-                    	// Remove all classes from list items
-                    	quickAccessNavNode.all('li').removeAttribute('class', '');
+                    	// Reset class names
+                    	quickAccessNavNode.set('className', '');
+                    	quickAccessNavNode.all('li').set('className', '');
+                    	quickAccessNavNode.all('ul').set('className', '');
+                    	
+                    	// Set correct class name for main list
+                    	quickAccessNavNode.addClass('quick-access-nav-list clearfix');
                     	
                     	// Set first level nodes
                     	var firstLevelNodes = quickAccessNavNode.all('>li'); 
@@ -120,21 +125,16 @@ AUI().add('rp-quick-access-nav',function(A) {
                     		}
                     	});
                     	
-                    	// Remove all fourth level lists (third level sublist)
-                    	var fourthLevelLists = quickAccessNavNode.all('ul.nav-list-sub-3');
-                    	fourthLevelLists.remove();
-                    	
-                    	// Remove classes from child menus
-                    	quickAccessNavNode.all('ul').removeAttribute('class', '');
-                    	
                     	// Set child menu class
                     	quickAccessNavNode.all('ul').addClass('child-menu');
                     	
                     	// Set second level classes
-                    	quickAccessNavNode.all('li.level-1 > div > ul > li').addClass('level-2');
+                    	var levelTwoNodes = quickAccessNavNode.all('li.level-1 > div > ul > li'); 
+                    	levelTwoNodes.addClass('level-2');
                     	
                     	// Set third level classes
-                    	quickAccessNavNode.all('li.level-2 > ul > li').addClass('level-3');
+                    	var thirdLevelNodes = quickAccessNavNode.all('li.level-2 > ul > li');
+                    	//thirdLevelNodes.addClass('level-3');
                     	
                     	// Remove all spans inside a tags
                     	quickAccessNavNode.all('a > span').each(function(node, index, list) {
