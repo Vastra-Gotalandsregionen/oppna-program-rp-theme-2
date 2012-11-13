@@ -8,4 +8,35 @@
 		</div>
 		<a href="#close" class="close">St&auml;ng</a>
 	</div>
+	
+	<ul class="quick-access-nav-list clearfix aui-helper-hidden_">
+		#foreach ($nav_item in $nav_items)
+			## Only add navigation nodes with children
+			#if ($nav_item.hasChildren())
+    			<li class="level-1">
+    				<a href="$nav_item.getURL()" target="$nav_item.getTarget()">$nav_item.getName()</a>
+    				
+    				<div class="nav-list-sub-wrap">
+    					<ul class="child-menu">
+    						#foreach ($nav_level_2_item in $nav_item.getChildren())
+    							<li class="level-2">
+    								<a href="$nav_level_2_item.getURL()" $nav_level_2_item.getTarget()>$nav_level_2_item.getName()</a>
+    								#if ($nav_level_2_item.hasChildren())
+    									<ul class="child-menu">
+    										#foreach ($nav_level_3_item in $nav_level_2_item.getChildren())
+    											<li class="level-3">
+    												<a href="$nav_level_3_item.getURL()" $nav_level_3_item.getTarget()>$nav_level_3_item.getName()</a>
+    											</li>
+    										#end
+    									</ul>
+    								#end
+    							</li>
+    						#end
+    					</ul>
+    				</div>
+    			</li>
+			#end
+		#end
+	</ul>
+	
 </div>
