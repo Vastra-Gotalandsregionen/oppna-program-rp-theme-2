@@ -1,5 +1,7 @@
 AUI().add('rp-quick-access-nav',function(A) {
     var Lang = A.Lang,
+    
+    	CREATE_FROM_MAIN_NAVIGATION = 'createFromMainNavigation',
         
         FILTER_INPUT_ID = 'filterInputId',
         
@@ -20,6 +22,11 @@ AUI().add('rp-quick-access-nav',function(A) {
     var QuickAccessNav = A.Component.create(
             {
                 ATTRS: {
+                	
+                	createFromMainNavigation: {
+                		value: false
+                	},
+                	
                 	filterInputId: {
                 		value: '#quickAccessFilterInput'
                 	},
@@ -68,7 +75,9 @@ AUI().add('rp-quick-access-nav',function(A) {
                         	triggerListNode.show();	
                         }
                         
-                        instance._createQuickAccessMenu();
+                        if(instance.get(CREATE_FROM_MAIN_NAVIGATION)) {
+                        	instance._createQuickAccessMenu();	
+                        }
                         
                         instance._initOverlay(trigger);
                     },
@@ -81,6 +90,7 @@ AUI().add('rp-quick-access-nav',function(A) {
                         }, instance);
                     },
                     
+                    // Creates quick access menu from main navigation
                     _createQuickAccessMenu: function() {
                     	var instance = this;
                     	
