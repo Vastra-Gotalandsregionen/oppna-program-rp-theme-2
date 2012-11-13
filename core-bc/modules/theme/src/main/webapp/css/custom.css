@@ -901,17 +901,18 @@ ul.quick-access-nav-list ul.child-menu li a:hover {
 }
 
 #breadcrumbs ul li {
+	background: url(../images/arrows/arrow-right-blue.png) right center no-repeat;
 	display: block;
 	float: left;
 	margin: 0 5px;
+	padding: 0 15px 0 0;
 	position: relative;
 }
 
-#breadcrumbs ul li.first,
+#breadcrumbs ul li:last-child,
 #breadcrumbs ul li.last {
-	/*
-	display: none;
-	*/
+	background: none;
+	padding-right: 0;
 }
 
 #breadcrumbs h1 {

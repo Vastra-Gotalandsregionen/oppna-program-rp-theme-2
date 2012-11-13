@@ -26,6 +26,8 @@ AUI().add('rp-theme-2',function(A) {
                     renderUI: function() {
                         var instance = this;
                         
+                        instance._initBreadcrumbs();
+                        
                         instance._initNavigationButton();
                         instance._initMainNavigation();
                         instance._initDockbarToggle();
@@ -38,6 +40,20 @@ AUI().add('rp-theme-2',function(A) {
     
                     bindUI: function() {
                         var instance = this;
+                    },
+                    
+                    _initBreadcrumbs: function() {
+                    	var instance = this;
+                    	
+                    	var breadcrumbItems = A.all('#breadcrumbs ul.breadcrumbs li');
+                    	if(breadcrumbItems.size() > 0) {
+                    		var firstItem = breadcrumbItems.item(0);
+                    		var lastItem = breadcrumbItems.item(breadcrumbItems.size() - 1);
+                    		
+                    		firstItem.addClass('first');
+                    		lastItem.addClass('last');
+                    	}
+                    	
                     },
 
             		//Toggle dockbar when settings is clicked in topnav
