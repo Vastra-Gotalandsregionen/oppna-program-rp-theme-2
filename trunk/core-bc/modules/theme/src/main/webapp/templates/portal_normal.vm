@@ -83,6 +83,8 @@
 	
 				$theme.wrapPortlet("portlet.vm", $content_include)
 			#end
+			
+			#parse ("$full_templates_path/piwik_portlet.vm")
 		</div>
 	</div>
 	
@@ -92,9 +94,11 @@
 	#parse ("$full_templates_path/footer.vm")
 </footer>
 
+#*
 #if($piwikActive)
 	#parse ("$full_templates_path/piwik.vm")
 #end
+*#
 
 </body>
 
