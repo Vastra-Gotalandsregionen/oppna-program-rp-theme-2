@@ -2699,6 +2699,40 @@ portlet-blogs .taglib-flags span a:hover {
     font-weight: bold;
 }
 
+/* ---------------- dental grant portlet ------------------ */
+.dental-grant-wrap table.search-result td, table.search-result th {
+    padding-right: 15px;
+    border-bottom: gray solid thin;
+}
+
+.dental-grant-wrap table.search-result {
+    width: 95%;
+}
+
+.dental-grant-wrap table td {
+    padding: 8px 15px 0px 0px;
+    height: 23px;
+}
+
+.dental-grant-wrap fieldset {
+    margin: 8px 0px;
+}
+
+.dental-grant-wrap .hover-option {
+    background-color: #add8e6;
+    cursor: pointer;
+}
+
+.dental-grant-wrap #optionList {
+    overflow-y: scroll;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+.dental-grant-confirmation-wrap table td {
+    padding: 3px;
+}
+
 /* ---------------- ifeed portlet ------------------------- */
 
 .ifeed-portlet .ifeed-portlet-ldap-people .aui-combobox-content .aui-field-content {
