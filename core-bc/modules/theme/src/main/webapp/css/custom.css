@@ -1,4 +1,3 @@
-/*
 @author:	Erik Andersson
 @date:		2011-04-05
 
@@ -402,6 +401,12 @@ a.rp-link:hover span {
 .clearfix{display:inline-block}
 * html .clearfix{height:1%}
 .clearfix{display:block}
+
+/* Clearfix style clearing for rp-columns */
+.rp-columns:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+.rp-columns{display:inline-block}
+* html .rp-columns{height:1%}
+.rp-columns{display:block}
 
 .opens-new-window-accessible {
 	background: url(../images/icons/icon-popup.png) 0 0 no-repeat;
@@ -3737,6 +3742,44 @@ a.vap-link-button:visited {
 	text-align: center;
 }
 
+/*-- VAP Flag --*/
+
+.vap-flag {
+	background: transparent url(../images/aui/rating.png) 0 0 no-repeat;
+	display: block;
+	font-size: 0;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	text-decoration: none;
+	text-indent: -9999em;
+	width: 16px;
+}
+
+.vap-flag:hover {
+	background-position-y: -16px;
+	text-decoration: none;
+}
+
+.vap-flag-active {
+	background-position-y: -32px;
+}
+
+/* ----------------- VAP User Flags Portlet ----------------------- */
+
+.vap-flag-remove {
+	background: transparent url(../images/common/close.png) 0 0 no-repeat;
+	display: block;
+	font-size: 0;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	text-decoration: none;
+	text-indent: -9999em;
+	width: 16px;	
+}
+
+
 /* ----------------- VAP Search Facet Portlet ----------------------- */
 
 .vap-facet-search-wrap {
@@ -3930,7 +3973,6 @@ ul.recent-blog-entries li .extra {}
 .vap-view-document-wrap h2.title {}
 
 .vap-view-document-wrap .extracted-html {}
-
 
 
 
@@ -4361,4 +4403,123 @@ ul.vap-search-results .hd-controls .link-btn-save {
 .aui-vap-bookmark-button-overlay .aui-overlay-content {
 	background: #fff;
 	position: relative;
+}
+
+/*----------------------------------------------------------------------
+=Sandbox - Vega
+----------------------------------------------------------------------*/
+
+input[type="text"] {
+	background: #fff;
+	border: 1px solid #C4CED5;
+	padding: 6px;
+}
+
+.aui-datepicker-input input[type="text"],
+input[type="text"].aui-datepicker-input {
+	background-image: url(../images/common/calendar.png);
+	background-position: 98% 50%;
+	background-repeat: no-repeat;
+	padding-right: 40px;
+}
+
+
+/*------- RP table -------*/
+
+.rp-table {
+	border: 1px solid #bbb;
+	color: #444;
+	width: 100%;
+}
+
+.rp-table tr {
+	background: #fff;
+	border: 1px solid #bbb;
+	border-width: 0 0 1px 0;
+}
+
+.rp-table tr.odd {
+	background: #f5f7fb;
+}
+
+.rp-table tr.last {
+	border-width: 0;
+}
+
+.rp-table thead tr {
+	background: #e2e8f3 url(../images/bg/bg-grad-gray.png) repeat-x 0 0;
+	color: #444;
+	font-weight: bold;
+}
+
+.rp-table th,
+.rp-table td {
+	border-right: 1px solid #bbb;
+	padding: 10px;
+}
+
+.rp-table tr a {
+	color: #444;
+	text-decoration: underline;
+}
+
+.rp-table tr a.show-more {
+	background: transparent url(../images/arrows/05_down.png) no-repeat top center;
+	display: block;
+	font-size: 0;
+	height: 12px;
+	text-indent: -9999em;
+	width: 12px;
+}
+
+.rp-table tr a.show-more-expanded {
+	background-image: url(../images/arrows/05_up.png);
+}
+
+.rp-table tr a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.rp-table-filters {
+	margin-bottom: 10px;
+}
+
+.rp-table-filters .aui-field-wrapper {
+	clear: none; 
+	float: left;
+	margin: 10px 20px 10px 0;
+	position: relative;
+}
+
+.rp-table-filters label {
+	margin: 0 0 3px 0;
+}
+
+.rp-button input[type="submit"],
+.rp-button input[type="cancel"],
+.rp-button input[type="button"] {
+	background: #c7c6c5;
+	border: 1px solid #a5a4a3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #444;
+	display: block;
+	float: left;
+	/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
+	font-size: 13px;
+	font-weight: normal;
+	margin-right: 10px;
+	padding: 7px 20px;
+	position: relative;
+	text-align: center;
+	text-shadow: none;
+}
+
+.rp-button input[type="submit"] {
+	background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+	border: 1px solid #2f71a8;
+	border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+	color: #fff;  
 }
