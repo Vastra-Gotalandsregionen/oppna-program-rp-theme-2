@@ -3168,8 +3168,11 @@ a.news-title {
 }
 
 .cal-pager .prev,
-.cal-pager .next {
+.cal-pager .prev:hover,
+.cal-pager .next,
+.cal-pager .next:hover {
 	background: transparent url(../images/paginator/pager-simple-sprite.png) 0 0 no-repeat;
+	border: none;
 	height: 25px;
 	font-size: 0;
 	padding: 0;
@@ -3177,11 +3180,13 @@ a.news-title {
 	width: 25px;
 }
 
-.cal-pager .prev {
+.cal-pager .prev,
+.cal-pager .prev:hover {
 	background-position: 0 0;
 }
 
-.cal-pager .next {
+.cal-pager .next,
+.cal-pager .next:hover {
 	background-position: 0 -50px;
 }
 
