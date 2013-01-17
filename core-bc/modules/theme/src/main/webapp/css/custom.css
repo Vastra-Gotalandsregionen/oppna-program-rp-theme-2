@@ -3980,7 +3980,31 @@ ul.recent-blog-entries li .extra {}
 
 .vap-view-document-wrap .extracted-html {}
 
+/* ----------------- Crud App Portlet ----------------------- */
 
+.crud-app-tables-filter {}
+
+.crud-app-tables-filter label {
+	color: #444;
+	display: block;
+	float: left;
+	font-weight: bold;
+	max-width: 200px;
+	padding: 6px 10px 6px 0;
+	position: relative;
+}
+
+.crud-app-tables-filter input {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.crud-app-tables-filter .help-text {
+	display: block;
+	font-style: italic;
+	margin: 5px 0;
+}
 
 /*----------------------------------------------------------------------
 =Articles
@@ -4528,4 +4552,25 @@ input[type="text"].aui-datepicker-input {
 	border: 1px solid #2f71a8;
 	border-color: #2f71a8 #052a73 #052a73 #2f71a8;
 	color: #fff;  
+}
+
+
+
+
+ul.rp-simple-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.rp-simple-list li {
+	background: transparent url(../images/icons/icon-arrow.png) left center no-repeat;
+	margin: 10px 0;
+	padding: 4px 0 4px 20px;
+}
+
+ul.rp-simple-list li a {
+	font-size: 1.1em;
+	line-height: 1.1;
+	text-decoration: none;
 }
