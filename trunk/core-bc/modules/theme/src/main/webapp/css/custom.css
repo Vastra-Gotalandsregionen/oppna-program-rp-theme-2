@@ -1579,6 +1579,117 @@ li.vgr-list-view-item .hd h3 a:hover {
 	position: relative;
 }
 
+/*------- RP table -------*/
+
+.rp-table {
+	border: 1px solid #bbb;
+	color: #444;
+	width: 100%;
+}
+
+.rp-table tr {
+	background: #fff;
+	border: 1px solid #bbb;
+	border-width: 0 0 1px 0;
+}
+
+.rp-table tr.odd {
+	background: #f5f7fb;
+}
+
+.rp-table tr.last {
+	border-width: 0;
+}
+
+.rp-table thead tr {
+	background: #e2e8f3 url(../images/bg/bg-grad-gray.png) repeat-x 0 0;
+	color: #444;
+	font-weight: bold;
+}
+
+.rp-table th,
+.rp-table td {
+	border-right: 1px solid #bbb;
+	padding: 10px;
+}
+
+.rp-table tr a {
+	color: #444;
+	text-decoration: underline;
+}
+
+.rp-table tr a.show-more {
+	background: transparent url(../images/arrows/05_down.png) no-repeat top center;
+	display: block;
+	font-size: 0;
+	height: 12px;
+	text-indent: -9999em;
+	width: 12px;
+}
+
+.rp-table tr a.show-more-expanded {
+	background-image: url(../images/arrows/05_up.png);
+}
+
+.rp-table tr a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.rp-table-filters {
+	margin-bottom: 10px;
+}
+
+.rp-table-filters .aui-field-wrapper {
+	clear: none; 
+	float: left;
+	margin: 10px 20px 10px 0;
+	position: relative;
+}
+
+.rp-table-filters label {
+	margin: 0 0 3px 0;
+}
+
+/*------- RP table simple -------*/
+
+.rp-table-simple {
+	border: none;
+	color: #444;
+	width: 100%;
+}
+
+.rp-table-simple tr {
+	background: transparent url(../images/separators/rp-separator.png) bottom left repeat-x;
+	border: none;
+}
+
+.rp-table-simple thead tr {
+	background: #bcd3e6;
+	color: #2f6ea1;
+	font-weight: bold;
+}
+
+.rp-table-simple th {
+	border: none;
+	padding: 5px;
+}
+
+.rp-table-simple td {
+	border: none;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.rp-table-simple td .cell-label {
+	font-weight: bold;
+}
+
+.rp-table-simple tr a {
+	color: #444;
+	text-decoration: underline;
+}
+
 /*------- Dialog (aui) -------*/
 
 .aui-dialog-bd fieldset,
@@ -1786,6 +1897,59 @@ li.vgr-list-view-item .hd h3 a:hover {
 	width: 30px;
 }
 
+/*------- RP Box -------*/
+
+.rp-box {
+	background: #bcd3e6;
+	border: 1px solid #aac9e2;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 10px 0;
+	padding: 10px;
+	position: relative;
+}
+
+.rp-box .rp-box-inner {
+	background: #f7f7f7;
+	border: 1px solid #a9bdcf;
+	padding: 10px;
+}
+
+.rp-box .rp-box-inner h2.title {
+	background: transparent url(../images/separators/rp-separator.png) repeat-x bottom left;
+	font-size: 1.6em;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+.rp-box .aui-fieldset {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.rp-box .aui-field {
+	display: block;
+	float: left;
+	width: 33%;
+}
+
+.rp-box .aui-field-content {
+	display: block;
+	margin: 5px 0;
+	padding-right: 10px;
+}
+
+.rp-box .cal-pager {
+	border-bottom: 0;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.rp-box .cal-pager .cal-display-interval {
+	font-size: 1.0em;
+	line-height: 25px;
+}
 
 /*----------------------------------------------------------------------
 =Liferay Components
@@ -4454,77 +4618,8 @@ input[type="text"].aui-datepicker-input {
 }
 
 
-/*------- RP table -------*/
 
-.rp-table {
-	border: 1px solid #bbb;
-	color: #444;
-	width: 100%;
-}
-
-.rp-table tr {
-	background: #fff;
-	border: 1px solid #bbb;
-	border-width: 0 0 1px 0;
-}
-
-.rp-table tr.odd {
-	background: #f5f7fb;
-}
-
-.rp-table tr.last {
-	border-width: 0;
-}
-
-.rp-table thead tr {
-	background: #e2e8f3 url(../images/bg/bg-grad-gray.png) repeat-x 0 0;
-	color: #444;
-	font-weight: bold;
-}
-
-.rp-table th,
-.rp-table td {
-	border-right: 1px solid #bbb;
-	padding: 10px;
-}
-
-.rp-table tr a {
-	color: #444;
-	text-decoration: underline;
-}
-
-.rp-table tr a.show-more {
-	background: transparent url(../images/arrows/05_down.png) no-repeat top center;
-	display: block;
-	font-size: 0;
-	height: 12px;
-	text-indent: -9999em;
-	width: 12px;
-}
-
-.rp-table tr a.show-more-expanded {
-	background-image: url(../images/arrows/05_up.png);
-}
-
-.rp-table tr a:hover {
-	color: #000;
-	text-decoration: none;
-}
-
-.rp-table-filters {
-	margin-bottom: 10px;
-}
-
-.rp-table-filters .aui-field-wrapper {
-	clear: none; 
-	float: left;
-	margin: 10px 20px 10px 0;
-	position: relative;
-}
-
-.rp-table-filters label {
-	margin: 0 0 3px 0;
-}
+/*------- RP button -------*/
 
 .rp-button input[type="submit"],
 .rp-button input[type="cancel"],
@@ -4554,8 +4649,7 @@ input[type="text"].aui-datepicker-input {
 	color: #fff;  
 }
 
-
-
+/*------- RP simple list -------*/
 
 ul.rp-simple-list {
 	list-style: none;
