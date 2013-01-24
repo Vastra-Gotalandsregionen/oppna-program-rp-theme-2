@@ -938,10 +938,15 @@ ul.site-navigation-list > li {
 	display: inline-block;
 	list-style: none;
 	min-height: 150px;
+	min-width: 250px;
 	padding: 0;
 	vertical-align: top;
 	width: 49.0%;
 }
+
+.aui-w30 ul.site-navigation-list > li {
+	width: 100%;
+} 
 
 .ie7 ul.site-navigation-list > li {
 	display: inline;
