@@ -19,7 +19,7 @@ function addCssClassName(node, cssClassName) {
 }
 
 AUI().ready('rp-theme-2', function(A) {
-	var rpTheme2 = new A.RpTheme2().render();;
+	var rpTheme2 = new A.RpTheme2().render();
 });
 
 Liferay.on('allPortletsReady',function() {
@@ -29,4 +29,24 @@ Liferay.on('allPortletsReady',function() {
 			footerNode.plug(A.Plugin.RpFooter);	
 		}
 	});
+});
+
+// Testing iframe link plugin. Code should be placed in RpTheme2 module when finished.
+AUI().ready('aui-base', 'rp-iframe-link-plugin', function(A) {
+	
+	//initPlugLinks();
+	
+	function initPlugLinks() {
+		var navNode = A.one('#navigation');
+		if(navNode) {
+			navNode.append('<br /><p>To test the iframe dialog: <a class="rp-overlay-link" href="http://www.lipsum.com" target="_BLANK">Click here</a></p><br />');
+			plugLinks();
+		}
+	}
+	
+	function plugLinks() {
+		var overlayLinks = A.all('a.rp-overlay-link');
+		overlayLinks.plug(A.Plugin.RpIframeLink);
+	}
+	
 });
