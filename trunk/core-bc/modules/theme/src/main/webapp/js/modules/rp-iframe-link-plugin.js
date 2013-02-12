@@ -18,6 +18,8 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 		// Property keys
 		HOST = 'host'
 	;
+	
+	var TPL_IFRAME = '<iframe class="content-iframe" title="" frameborder="0" allowfullscreen src="{url}" width="100%" height="100%" scrolling="yes"></iframe>';
 
 	var RpIframeLink = A.Component.create({
 		
@@ -45,7 +47,7 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 	            value: 600
             },
                 useMaxHeight: {
-                value: false
+                value: true
             }
 
         },
@@ -62,7 +64,7 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 
 			initializer: function() {
 				var instance = this;
-
+				
 				var host = instance.get(HOST);
 
 				instance.dialogTitle = '&nbsp;'
@@ -99,6 +101,21 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 				host.on('click', instance._onHostClick, instance);
 			},
 			
+            // Event listener - on before documentDialog render
+            _onBeforeDocumentDialogRender: function (e, params) {
+
+                // Instance is document dialog
+                var instance = this;
+
+                var iframeURL = params[0];
+                
+                var contentIframe = A.substitute(TPL_IFRAME, {
+                	url: iframeURL
+                });
+
+                instance.set('bodyContent', contentIframe);
+            },
+			
 			_onHostClick: function(e) {
 				var instance = this;
 				e.halt();
@@ -107,24 +124,30 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 				var uri = linkNode.getAttribute('href');
 				var iframeId = instance.get(IFRAME_ID);
 				var width = instance.get(WIDTH);
+				var height = 'auto';
+				
+				var useMaxHeight = instance.get(USE_MAX_HEIGHT);
+				
+				if(useMaxHeight) {
+					height = instance.get(MAX_HEIGHT);
+				}
 
 				var dialog = new A.Dialog({
+					bodyContent: 'Lorem ipsum',
 					centered: false,
 					cssClass: 'rp-iframe-dialog',
 					align: { node: null, points: [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.TC] },
 					destroyOnClose: true,
 					modal: true,
 					title: 'Title',
-					after: {
-						//destroy: function() { window.location.reload(); }
-					},
-					resizable: false,
+					resizable: true,
+					height: height,
 					width: width
-				}).plug(A.Plugin.DialogIframe, {
-					uri: uri,
-					//Give the iframe a unique ID
-					iframeId: iframeId
-				}).render();
+				});
+				
+				var params = [uri];
+				dialog.before('render', instance._onBeforeDocumentDialogRender, dialog, params);
+				dialog.render();
 
 				instance.dialog = dialog;
 
@@ -132,6 +155,7 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 				//A.on('available', instance._onIframeAvailable, '#' + iframeId, null, null, instance);
 			},
 
+			/*
 			_onIframeAvailable: function(e, instance) {
 				var iframeNode = this;
 				var maxHeight = instance.get(MAX_HEIGHT);
@@ -171,6 +195,7 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 
 				}, iframeNode.resizeiframe, '_uiSetHeight');
 			},
+			*/
 
 			_someFunction: function() {}
         	}
@@ -184,7 +209,6 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 		requires:[
 			'aui-component',
 			'aui-dialog',
-			'aui-dialog-iframe',
 			'plugin'
 		]
 	}
