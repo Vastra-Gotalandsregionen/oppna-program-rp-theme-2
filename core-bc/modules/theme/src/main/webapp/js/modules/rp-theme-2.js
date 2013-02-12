@@ -30,6 +30,7 @@ AUI().add('rp-theme-2',function(A) {
                         
                         instance._initNavigationButton();
                         instance._initMainNavigation();
+                        instance._initOverlayLinks();
                         instance._initDockbarToggle();
                         instance._initRpNewsCarousel();
                         instance._initRpKnowledgebase();
@@ -84,6 +85,13 @@ AUI().add('rp-theme-2',function(A) {
             					listNode.siblings('.top-nav-settings-show').show();
             				}
             			});
+            		},
+            		
+            		_initOverlayLinks: function() {
+            			var instance = this;
+            			
+            			var overlayLinks = A.all('a.rp-overlay-link');
+            			overlayLinks.plug(A.Plugin.RpIframeLink);
             		},
             		
             		_initRpKnowledgebase: function() {
@@ -227,6 +235,7 @@ AUI().add('rp-theme-2',function(A) {
         requires: [
 	       	'aui-base',
 	    	'event',
+	    	'rp-iframe-link-plugin',
 	    	'rp-knowledgebase',
 	    	'rp-navigation-button',
 	    	'rp-news-carousel',
