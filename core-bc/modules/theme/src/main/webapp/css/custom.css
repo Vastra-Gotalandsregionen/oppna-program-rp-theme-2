@@ -1685,7 +1685,7 @@ li.vgr-list-view-item .hd h3 a:hover {
 .rp-table th,
 .rp-table td {
 	border-right: 1px solid #bbb;
-	padding: 10px;
+	padding: 5px 10px;
 }
 
 .rp-table tr a {
@@ -2024,6 +2024,11 @@ li.vgr-list-view-item .hd h3 a:hover {
 .rp-box .cal-pager .cal-display-interval {
 	font-size: 1.0em;
 	line-height: 25px;
+}
+
+.rp-box .vertical-layout .aui-field {
+    display: block;
+    float: none;
 }
 
 /*----------------------------------------------------------------------
