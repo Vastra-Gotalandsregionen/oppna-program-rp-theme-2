@@ -126,6 +126,8 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 				var width = instance.get(WIDTH);
 				var height = 'auto';
 				
+				var title = linkNode.html();
+				
 				var useMaxHeight = instance.get(USE_MAX_HEIGHT);
 				
 				if(useMaxHeight) {
@@ -139,7 +141,7 @@ AUI.add('rp-iframe-link-plugin', function(A) {
 					align: { node: null, points: [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.TC] },
 					destroyOnClose: true,
 					modal: true,
-					title: 'Title',
+					title: title,
 					resizable: true,
 					height: height,
 					width: width
