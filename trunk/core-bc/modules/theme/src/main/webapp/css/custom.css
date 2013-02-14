@@ -2031,6 +2031,43 @@ li.vgr-list-view-item .hd h3 a:hover {
     float: none;
 }
 
+/*------- RP Iframe Dialog -------*/
+
+.rp-iframe-dialog .aui-dialog-hd {
+	background: #2C6FA7;
+	color: #fff;
+	font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	text-shadow: none;
+}
+
+.rp-iframe-dialog .aui-buttonitem-content {
+	background: none;
+	border: none;
+	height: 35px;
+	width: 34px;
+	padding: 0px;
+}
+
+.rp-iframe-dialog .aui-icon-closethick {
+	background: transparent url(../images/user-wizard/wizard-close-button-sprite.png) 0 0 no-repeat;
+	height: 32px;
+	width: 32px;
+}
+
+.rp-iframe-dialog .aui-state-hover .aui-icon-closethick {
+	background-position: 0 -50px;
+}
+
+.rp-iframe-dialog .aui-panel-hd-text {
+	line-height: 1.4;
+}
+
+.rp-iframe-dialog .aui-dialog-bd {
+	overflow: hidden;
+}
+
 /*----------------------------------------------------------------------
 =Liferay Components
 ----------------------------------------------------------------------*/

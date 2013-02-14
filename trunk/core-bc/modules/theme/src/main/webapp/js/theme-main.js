@@ -19,6 +19,7 @@ function addCssClassName(node, cssClassName) {
 }
 
 AUI().ready('rp-theme-2', function(A) {
+	
 	var rpTheme2 = new A.RpTheme2().render();
 });
 
