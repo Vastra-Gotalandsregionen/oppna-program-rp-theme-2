@@ -141,6 +141,10 @@ body {
 	display: none;
 }
 
+body > .portlet-msg-info {
+	display: none;
+}
+
 #main-content {
 	margin: 15px 0;
 	margin-right: 50px;
