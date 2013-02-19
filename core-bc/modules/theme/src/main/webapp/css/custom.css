@@ -1524,6 +1524,11 @@ li.vgr-list-view-item .hd h3 a:hover {
 	margin-top: 0;
 }
 
+.info-box h3 {
+	color: #444;
+}
+
+
 .info-box img.image {
 	float: right;
 	padding: 0 0 5px 10px;
@@ -1691,6 +1696,16 @@ li.vgr-list-view-item .hd h3 a:hover {
 	border-right: 1px solid #bbb;
 	padding: 5px 10px;
 }
+
+/* Even column widths */
+.rp-table-even-2 th, .rp-table-even-2 td { width: 49.9%; }
+.rp-table-even-3 th, .rp-table-even-3 td { width: 33%; }
+.rp-table-even-4 th, .rp-table-even-4 td { width: 24.9%; }
+.rp-table-even-5 th, .rp-table-even-5 td { width: 19.9%; }
+.rp-table-even-6 th, .rp-table-even-6 td { width: 16.6%; }
+.rp-table-even-7 th, .rp-table-even-7 td { width: 14.2%; }
+.rp-table-even-8 th, .rp-table-even-8 td { width: 12.4%; }
+.rp-table-even-9 th, .rp-table-even-9 td { width: 11.1%; }
 
 .rp-table tr a {
 	color: #444;
@@ -4795,6 +4810,33 @@ input[type="text"].aui-datepicker-input {
 }
 
 .rp-button input[type="submit"] {
+	background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
+	border: 1px solid #2f71a8;
+	border-color: #2f71a8 #052a73 #052a73 #2f71a8;
+	color: #fff;  
+}
+
+a.rp-link-button {
+	background: #c7c6c5;
+	border: 1px solid #a5a4a3;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #444;
+	display: block;
+	float: left;
+	/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
+	font-size: 13px;
+	font-weight: normal;
+	margin-right: 10px;
+	padding: 7px 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;	
+}
+
+a.rp-link-button-alt {
 	background: #2865ad url(../images/buttons/button-bg-normal.png) 0 0 repeat-x;
 	border: 1px solid #2f71a8;
 	border-color: #2f71a8 #052a73 #052a73 #2f71a8;
