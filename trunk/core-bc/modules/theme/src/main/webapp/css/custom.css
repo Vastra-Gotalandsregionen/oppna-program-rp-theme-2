@@ -1715,6 +1715,37 @@ li.vgr-list-view-item .hd h3 a:hover {
 	text-decoration: none;
 }
 
+.rp-table-row-extra {}
+
+.rp-table-row-extra .extra-wrap {
+}
+
+.rp-table-row-extra .extra-item-wrap {
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	padding: 3px;
+}	
+
+.rp-table-row-extra .extra-item-wrap-last {
+	border-bottom: 0;
+}
+
+.rp-table-row-extra .label {
+	float: left;
+	color: #444;
+	font-weight: bold;
+	width: 100px;
+}
+
+.rp-table-row-extra .content {
+	margin: 0 0 0 100px;
+	padding: 0 0 0 10px;
+}
+
+.rp-table tr.rp-table-row-note td {
+	padding: 15px;
+}
+
 .rp-table-filters {
 	margin-bottom: 10px;
 }
