@@ -195,6 +195,11 @@ ul.top-nav-list .top-nav-quick-access {
 	margin-right: 10px;
 }
 
+ul.site-navigation-list > li {
+	display: block;
+	min-width: auto;
+	width: 100%;
+}
 
 /* ----------------- Liferay Portlets ----------------------- */
 
