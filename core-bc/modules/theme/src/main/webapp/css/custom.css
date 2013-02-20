@@ -356,6 +356,10 @@ a.rp-link:hover span {
 	text-align: right;
 }
 
+.text-highlight-1 {
+	color: ff0000;
+}
+
 /* ---------- Hidden Accessible ---------- */
 
 #skip-to-content,
@@ -2060,15 +2064,18 @@ li.vgr-list-view-item .hd h3 a:hover {
 }
 
 .rp-box .aui-field {
-	display: block;
-	float: left;
-	width: 33%;
+	display: -moz-inline-stack;
+	display: inline-block;
+	min-height: 30px;
+	min-width: 150px;
+	padding: 0;
+	vertical-align: top;
+	width: 24.8%;
 }
 
 .rp-box .rp-block-fields .aui-field {
 	display: block;
-	float: none;
-	width: 100;
+	width: 100%;
 }
 
 .rp-box .aui-field-content {
@@ -2099,7 +2106,7 @@ li.vgr-list-view-item .hd h3 a:hover {
 	background: #2C6FA7;
 	color: #fff;
 	font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;
-	font-size: 26px;
+	font-size: 18px;
 	font-weight: normal;
 	text-shadow: none;
 }
@@ -2123,7 +2130,7 @@ li.vgr-list-view-item .hd h3 a:hover {
 }
 
 .rp-iframe-dialog .aui-panel-hd-text {
-	line-height: 1.4;
+	line-height: 1.8;
 }
 
 .rp-iframe-dialog .aui-dialog-bd {
