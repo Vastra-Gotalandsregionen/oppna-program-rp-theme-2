@@ -1681,6 +1681,10 @@ li.vgr-list-view-item .hd h3 a:hover {
 	background: #f5f7fb;
 }
 
+.rp-table tr.hightlight-type-1 {
+	background: #ffff00;
+}
+
 .rp-table tr.last {
 	border-width: 0;
 }
@@ -1765,11 +1769,13 @@ li.vgr-list-view-item .hd h3 a:hover {
 	margin-bottom: 10px;
 }
 
+.rp-box .rp-table-filters .aui-field-wrapper,
 .rp-table-filters .aui-field-wrapper {
 	clear: none; 
 	float: left;
 	margin: 10px 20px 10px 0;
 	position: relative;
+	width: auto;
 }
 
 .rp-table-filters label {
@@ -2057,6 +2063,12 @@ li.vgr-list-view-item .hd h3 a:hover {
 	display: block;
 	float: left;
 	width: 33%;
+}
+
+.rp-box .rp-block-fields .aui-field {
+	display: block;
+	float: none;
+	width: 100;
 }
 
 .rp-box .aui-field-content {
