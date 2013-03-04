@@ -357,7 +357,7 @@ a.rp-link:hover span {
 }
 
 .text-highlight-1 {
-	color: ff0000;
+	color: #ff0000;
 }
 
 /* ---------- Hidden Accessible ---------- */
@@ -1685,7 +1685,7 @@ li.vgr-list-view-item .hd h3 a:hover {
 	background: #f5f7fb;
 }
 
-.rp-table tr.hightlight-type-1 {
+.rp-table tr.highlight-type-1 {
 	background: #ffff00;
 }
 
@@ -1784,6 +1784,10 @@ li.vgr-list-view-item .hd h3 a:hover {
 
 .rp-table-filters label {
 	margin: 0 0 3px 0;
+}
+
+.rp-table .right-align {
+    text-align: right;
 }
 
 /*------- RP table simple -------*/
@@ -4881,4 +4885,18 @@ ul.rp-simple-list li a {
 	font-size: 1.1em;
 	line-height: 1.1;
 	text-decoration: none;
+}
+
+/*--------- VEGA -----------*/
+.vega-box-inner > ol {
+    list-style-type: decimal;
+}
+
+.vega-box-inner > ol > li {
+    margin-bottom: 12px;
+}
+
+.vega-box-inner > ol > li > ol {
+    list-style-type: lower-alpha;
+    margin: 0 15px;
 }
