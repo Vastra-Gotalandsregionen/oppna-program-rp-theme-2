@@ -357,7 +357,12 @@ a.rp-link:hover span {
 }
 
 .text-highlight-1 {
-	color: #ff0000;
+    color: #ff0000;
+}
+
+.text-highlight-2 {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* ---------- Hidden Accessible ---------- */
