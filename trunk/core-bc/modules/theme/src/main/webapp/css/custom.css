@@ -2327,6 +2327,13 @@ a.portlet-icon-back:hover {
 	text-decoration: none;
 }
 
+/*------- Dockbar Portlet ------*/
+
+.dockbar {
+	visibility: visible;
+}
+
+
 /*------- Navigation Portlet (Section Navigation) ------*/
 
 ul.section-navigation-list {
@@ -4354,6 +4361,10 @@ ul.recent-blog-entries li .extra {}
 .vap-view-document-wrap .extracted-html {}
 
 /* ----------------- Crud App Portlet ----------------------- */
+
+.crud-app-wrap {
+	overflow-x: scroll;
+}
 
 .crud-app-tables-filter {}
 
