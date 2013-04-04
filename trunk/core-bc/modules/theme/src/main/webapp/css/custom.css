@@ -4855,6 +4855,7 @@ input[type="text"].aui-datepicker-input {
 	/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
 	font-size: 13px;
 	font-weight: normal;
+	line-height: 1.0;
 	margin-right: 10px;
 	padding: 7px 20px;
 	position: relative;
@@ -4881,6 +4882,7 @@ a.rp-link-button {
 	/*font-family: Ubuntu, Arial, Verdana, Helvetica, sans-serif;*/
 	font-size: 13px;
 	font-weight: normal;
+	line-height: 1.0;
 	margin-right: 10px;
 	padding: 7px 20px;
 	position: relative;
