@@ -4845,6 +4845,9 @@ input[type="text"].aui-datepicker-input {
 .rp-button input[type="cancel"],
 .rp-button input[type="button"] {
 	background: #c7c6c5;
+	
+	background: #bebdbc url(../images/buttons/button-bg.png) 0 0 repeat-x;
+	
 	border: 1px solid #a5a4a3;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -4872,6 +4875,9 @@ input[type="text"].aui-datepicker-input {
 
 a.rp-link-button {
 	background: #c7c6c5;
+	
+	background: #bebdbc url(../images/buttons/button-bg.png) 0 0 repeat-x;
+	
 	border: 1px solid #a5a4a3;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
