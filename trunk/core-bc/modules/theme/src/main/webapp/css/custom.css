@@ -1468,10 +1468,14 @@ li.vgr-list-view-item {
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	/*behavior: url(/vgr-alfa-theme/htc/css3pie.htc);*/
 	margin: 7px 0;
 	padding: 10px;
 	position: relative;
+}
+
+.ie7 li.vgr-list-view-item,
+.ie8 li.vgr-list-view-item {
+	zoom: 1;
 }
 
 li.vgr-list-view-item-odd {
