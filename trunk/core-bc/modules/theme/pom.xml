@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>se.vgregion.vgr-rp-theme2</groupId>
 		<artifactId>vgr-rp-theme-core-bc</artifactId>
-		<version>1.10</version>
+		<version>1.11-SNAPSHOT</version>
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	<groupId>se.vgregion.vgr-rp-theme2</groupId>
 	<artifactId>vgr-rp-theme-core-bc-module-theme</artifactId>
 	<packaging>war</packaging>
 	<name>Regionportalen Theme 2</name>
-	<version>1.10</version>
+	<version>1.11-SNAPSHOT</version>
 	<build>
 		<finalName>regionportalen2-theme</finalName>
 		<plugins>
