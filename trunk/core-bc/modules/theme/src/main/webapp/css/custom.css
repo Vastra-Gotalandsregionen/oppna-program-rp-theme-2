@@ -1162,6 +1162,10 @@ a:visited.link-button {
 	padding: 5px 1px;
 }
 
+input[type="text"].full-width {
+	width: 100%;
+}
+
 textarea {
 	background: #fff;
 	border: 2px solid #e4edf9;
