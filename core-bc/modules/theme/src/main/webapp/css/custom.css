@@ -1163,7 +1163,7 @@ a:visited.link-button {
 }
 
 input[type="text"].full-width {
-	width: 100%;
+	width: 90%;
 }
 
 textarea {
@@ -4396,6 +4396,29 @@ ul.recent-blog-entries li .extra {}
 	display: block;
 	font-style: italic;
 	margin: 5px 0;
+}
+
+.crud-app-form select {
+	width: 60.0%;
+}
+
+.crud-app-form input[type="text"].input-filter {
+	width: 30.0%;
+}
+
+.crud-value-label {
+	color: #555;
+	font-weight: bold;
+}
+
+.crud-app-form input[type="text"][disabled] {
+	background: #e5e5e5;
+	color: #000;
+	font-style: italic;
+}
+
+.ie .crud-app-form input[type="text"][disabled] {
+	background: #fff;
 }
 
 /*----------------------------------------------------------------------
