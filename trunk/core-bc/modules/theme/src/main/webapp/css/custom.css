@@ -1280,6 +1280,27 @@ textarea.focus {
 .size-3 input { width: 200px; }
 .size-4 input { width: 300px; }
 
+/*------- Placeholder -------*/
+
+input.aui-placeholder-text {
+	color: #b0a9a9;
+}
+
+::-webkit-input-placeholder {
+   color: #b0a9a9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #b0a9a9;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #b0a9a9;
+}
+
+:-ms-input-placeholder {  
+   color: #b0a9a9;
+}
 
 /*------- aui forms -------*/
 
