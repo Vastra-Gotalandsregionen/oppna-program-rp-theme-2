@@ -145,9 +145,12 @@
     "modules/rp-navigation-button.js",
     "modules/rp-news-carousel.js",
 	"modules/rp-iframe-link-plugin.js",
+	"modules/rp-placeholder-plugin.js",
     "modules/rp-theme-2.js",
     "theme-main.js"
 ])
+
+##"modules/rp-placeholder-plugin.js",
 
 ##
 ## Portal type

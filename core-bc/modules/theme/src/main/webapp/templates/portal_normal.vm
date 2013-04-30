@@ -25,7 +25,7 @@
 
 <div id="wrapper">
 	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
-
+	
 	<header id="banner" role="banner">
 		<div class="header-inner">
 			<hgroup id="heading" class="clearfix">
