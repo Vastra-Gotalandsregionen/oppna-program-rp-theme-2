@@ -3173,9 +3173,60 @@ portlet-blogs .taglib-flags span a:hover {
     background-color: #fafafa;
 }
 
+
+.ifeed-portlet .filter-type {
+	margin: 10px 0;
+}
+
+.ifeed-portlet .filter-type h4.label {
+	color: #333;
+	font-size: 1.1em;
+	margin: 0 0 5px 0;
+}
+
+.ifeed-portlet ul.filter-criteria-list {
+	list-style: none;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.ifeed-portlet ul.filter-criteria-list li {
+	margin: 5px 0;
+	padding: 0;
+}
+
+.ifeed-portlet .criteria-help {
+	background: transparent url(../images/common/help.png) 0 0 no-repeat;
+	cursor: pointer;
+	float: left;
+	font-size: 0;
+	height: 16px;
+	text-indent: -9999em;
+	width: 16px;
+}
+
+.ifeed-portlet .criteria-label {
+	margin-left: 20px;
+}
+
+.ifeed-portlet .criteria-label a.criteria-add {
+	background: transparent url(../images/common/add.png) 0 0 no-repeat;
+	color: #333;
+	display: block;
+	margin: 0;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+}
+
+.ifeed-portlet .criteria-label a.criteria-add:hover {
+	text-decoration: underline;
+}
+
 .aui-autocomplete-selected .ifeed-portlet-filter-result-odd {
     background-color: #DFE8F6;
 }
+
+
 
 /*------- Booking Portlet (resebokning) -------*/
 
