@@ -1718,14 +1718,13 @@ li.vgr-list-view-item .hd h3 a:hover {
 
 .rp-table {
 	border: 1px solid #bbb;
+	border-collapse: collapse;
 	color: #444;
 	width: 100%;
 }
 
 .rp-table tr {
 	background: #fff;
-	border: 1px solid #bbb;
-	border-width: 0 0 1px 0;
 }
 
 .rp-table tr.odd {
@@ -1748,7 +1747,8 @@ li.vgr-list-view-item .hd h3 a:hover {
 
 .rp-table th,
 .rp-table td {
-	border-right: 1px solid #bbb;
+	border: 1px solid #bbb;
+	border-width: 0 1px 1px 0;
 	padding: 5px 10px;
 }
 
@@ -4481,6 +4481,7 @@ ul.recent-blog-entries li .extra {}
 .crud-value-label {
 	color: #555;
 	font-weight: bold;
+	width: 30%;
 }
 
 .crud-app-form input[type="text"][disabled] {
@@ -4490,7 +4491,7 @@ ul.recent-blog-entries li .extra {}
 }
 
 .ie .crud-app-form input[type="text"][disabled] {
-	background: #fff;
+	/*background: #fff;*/
 }
 
 /*----------------------------------------------------------------------
