@@ -3184,6 +3184,9 @@ portlet-blogs .taglib-flags span a:hover {
 	margin: 0 0 5px 0;
 }
 
+
+/* Choose filters */
+
 .ifeed-portlet ul.filter-criteria-list {
 	list-style: none;
 	margin: 0 0 0 10px;
@@ -3227,6 +3230,60 @@ portlet-blogs .taglib-flags span a:hover {
 }
 
 
+/* Applied filters */
+
+ul.ifeed-applied-filters-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.ifeed-applied-filters-list li {
+	margin: 7px 0;
+	padding: 0;
+}
+
+.ifeed-applied-filter {
+	margin: 0 60px 0 0;
+}
+
+.ifeed-applied-filter .ifeed-label,
+.ifeed-applied-filter .ifeed-value {
+	display: block;
+	font-weight: normal;
+	font-variant: normal;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.ifeed-applied-filter .ifeed-label {
+	color: #555;
+	font-weight: bold;
+}
+
+.ifeed-applied-filter-tools {
+	float: right;
+	width: 60px;
+}
+
+.ifeed-applied-filter-tools .ifeed-tool {
+	background: #ccc;
+	display: block;
+	float: left;
+	font-size: 0;
+	height: 16px;
+	margin: 0 5px;
+	text-indent: -9999em;
+	width: 16px;
+}
+
+.ifeed-applied-filter-tools .edit {
+	background: transparent url(../images/common/edit.png) 0 0 no-repeat;
+}
+
+.ifeed-applied-filter-tools .delete {
+	background: transparent url(../images/common/delete.png) 0 0 no-repeat;
+}
 
 /*------- Booking Portlet (resebokning) -------*/
 
