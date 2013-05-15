@@ -1428,6 +1428,31 @@ a:link.link-button {
 	text-decoration: none;
 }
 
+/*------- Link icons -------*/
+
+/* Clearfix style clearing */
+.link-icon-wrap:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+.link-icon-wrap{display:inline-block}
+* html .link-icon-wrap{height:1%}
+.link-icon-wrap{display:block}
+
+.link-icon-wrap a.link-icon {
+	display: block;
+	float: left;
+	font-size: 0;
+	height: 16px;
+	margin: 0 5px;
+	text-indent: -9999em;
+	width: 16px;
+}
+
+.link-icon-wrap a.link-icon-delete {
+	background: transparent url(../images/common/delete.png) 0 0 no-repeat;
+}
+
+.link-icon-wrap a.link-icon-edit {
+	background: transparent url(../images/common/edit.png) 0 0 no-repeat;
+}
 
 /*----------------------------------------------------------------------
 =Modules and Content
@@ -3266,24 +3291,149 @@ ul.ifeed-applied-filters-list li {
 	width: 60px;
 }
 
-.ifeed-applied-filter-tools .ifeed-tool {
-	background: #ccc;
+/* JSONP form */
+
+.ifeed-jspon-container {}
+
+.ifeed-jspon-container .lfr-panel-titlebar .lfr-panel-title {
+	padding: 0 5px;
+}
+
+.ifeed-jspon-container .lfr-panel-content {
+	padding: 10px;
+}
+
+.ifeed-jsonp-settings .lfr-panel-content {
+	max-width: 700px;
+}
+
+
+.ifeed-jspon-container .aui-field-wrapper {}
+
+/* Clearfix style clearing */
+
+.ifeed-jspon-container .aui-field-wrapper-content:after{clear:both;content:'.';display:block;visibility:hidden;height:0}
+.ifeed-jspon-container .aui-field-wrapper-content{display:inline-block}
+* html .ifeed-jspon-container .aui-field-wrapper-content{height:1%}
+.ifeed-jspon-container .aui-field-wrapper-content{display:block}
+
+
+.ifeed-jsonp-settings .aui-field-multi,
+.ifeed-jsonp-settings .aui-field-text,
+.ifeed-jsonp-settings .aui-field-select {
 	display: block;
 	float: left;
-	font-size: 0;
+	max-width: 500px;
+	width: 49.9%;
+}
+
+.ifeed-jsonp-settings .aui-field-help {
+	display: block;
+	float: left;
+	margin-left: 4%;
+	width: 45.9%;
+}
+
+.ifeed-jsonp-settings .aui-field label,
+.ifeed-jsonp-settings .aui-field .aui-field-multi-element,
+.ifeed-jsonp-settings .aui-field .aui-field-element {
+	display: block;
+	float: left;
+	width: 49.9%;
+}
+
+.ifeed-jsonp-settings .aui-field .aui-field-multi-element .aui-field-text,
+.ifeed-jsonp-settings .aui-field .aui-field-multi-element .aui-field-select,
+.ifeed-jsonp-settings .aui-field .aui-field-multi-element .aui-field-element {
+	float: none;
+	max-width: auto;
+	width: 100%;
+}
+
+.ifeed-jsonp-settings .aui-field-content {
+	display: block;
+}
+
+.ifeed-jsonp-settings .aui-field label {
+	color: #555;
+	font-weight: bold;
+	margin-right: 4%;
+	width: 45.9%;
+}
+
+.ifeed-jsonp-settings .aui-field input[type="text"],
+.ifeed-jsonp-settings .aui-field select {
+	display: block;
+	margin: 0 0 5px 0;
+	width: 80%;
+}
+
+.ifeed-jsonp-columns .aui-column-content {
+	padding: 0 2.0em;
+}
+
+.ifeed-jsonp-columns .aui-column-content-first {
+	padding-left: 0;
+}
+
+.ifeed-jsonp-columns .aui-column-content-last {
+	padding-right: 0;
+}
+
+.ifeed-jspon-container a.link-button {
+	background: #d4d4d4 url(../images/portlet/header_bg.png) 0 0 repeat-x;
+	border: 1px solid #dedede;
+	border-color: #c8c9ca #9e9e9e #9e9e9e #c8c9ca;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #34404f;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-weight: bold;
+	line-height: 1.3;
+	margin: 0 3px 0 0;
+	padding: 5px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 1px 1px #fff;
+	width: auto;
+}
+
+.ifeed-jspon-container a.link-button:hover {
+	background: #b9ced9 url(../images/application/state_hover_bg.png) 0 0 repeat-x;
+	border-color: #627782;
+	color: #336699;
+}
+
+.ifeed-jspon-container a.link-button-icon .link-button-content {
+	display: block;
 	height: 16px;
-	margin: 0 5px;
-	text-indent: -9999em;
-	width: 16px;
+	line-height: 16px;
+	padding-left: 20px;
 }
 
-.ifeed-applied-filter-tools .edit {
-	background: transparent url(../images/common/edit.png) 0 0 no-repeat;
+.ifeed-jspon-container a.link-button-add .link-button-content {
+	background: transparent url(../images/common/add.png) 0 0 no-repeat;
 }
 
-.ifeed-applied-filter-tools .delete {
-	background: transparent url(../images/common/delete.png) 0 0 no-repeat;
+.ifeed-jsonp-column-hd {
+	color: #555;
+	font-weight: bold;
 }
+
+.ifeed-jsonp-column-bd-item {
+	margin: 10px 0;
+}
+
+.embed-code-textarea textarea {
+	display: block;
+	font-family: monospace;
+	height: 100px;
+	width: 80%;
+}
+
 
 /*------- Booking Portlet (resebokning) -------*/
 
