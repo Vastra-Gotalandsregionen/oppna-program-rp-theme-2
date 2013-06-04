@@ -3380,6 +3380,14 @@ ul.ifeed-applied-filters-list li {
 	padding-right: 0;
 }
 
+.ifeed-jsonp-columns .aui-field input[type="text"],
+.ifeed-jsonp-columns .aui-field select {
+	display: block;
+	margin: 0 0 5px 0;
+	width: 80%;
+}
+
+
 .ifeed-jspon-container a.link-button {
 	background: #d4d4d4 url(../images/portlet/header_bg.png) 0 0 repeat-x;
 	border: 1px solid #dedede;
