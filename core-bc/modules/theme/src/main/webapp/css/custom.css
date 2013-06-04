@@ -3184,6 +3184,11 @@ portlet-blogs .taglib-flags span a:hover {
 	visibility: hidden;
 }
 
+.ifeed-portlet .ifeed-search-list .title-wrap {
+	max-width: 175px;
+	word-wrap: break-word;
+}
+
 /* hide button */ 
 .ifeed-portlet .ifeed-portlet-ldap-people .aui-toolbar {
     display: none;    
