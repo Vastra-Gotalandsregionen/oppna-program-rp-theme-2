@@ -3178,6 +3178,12 @@ portlet-blogs .taglib-flags span a:hover {
     display: block;
 }
 
+.ifeed-portlet .results-grid a.taglib-icon span {
+	font-size: 0;
+	text-indent: -9999em;
+	visibility: hidden;
+}
+
 /* hide button */ 
 .ifeed-portlet .ifeed-portlet-ldap-people .aui-toolbar {
     display: none;    
