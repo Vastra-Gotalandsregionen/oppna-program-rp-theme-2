@@ -3184,6 +3184,11 @@ portlet-blogs .taglib-flags span a:hover {
 	visibility: hidden;
 }
 
+.ie .ifeed-portlet .ifeed-search-list table {
+	table-layout: fixed;
+}
+
+
 .ifeed-portlet .ifeed-search-list .title-wrap {
 	max-width: 175px;
 	word-wrap: break-word;
