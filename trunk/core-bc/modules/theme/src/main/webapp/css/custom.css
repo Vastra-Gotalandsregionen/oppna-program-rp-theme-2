@@ -1760,6 +1760,10 @@ li.vgr-list-view-item .hd h3 a:hover {
 	background: #ffff00;
 }
 
+.rp-table tr.highlight-type-2 {
+	background: #ff820b;
+}
+
 .rp-table tr.last {
 	border-width: 0;
 }
