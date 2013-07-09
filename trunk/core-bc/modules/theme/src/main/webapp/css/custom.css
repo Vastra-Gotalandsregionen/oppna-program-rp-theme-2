@@ -4740,7 +4740,7 @@ ul.recent-blog-entries li .extra {}
 
 .rp-user-bookmarks .bookmark-controls-main .rp-link-button {
 	float: right;
-	margin: 0;
+	margin: 0 0 0 10px;
 }
 
 .rp-user-bookmarks h2 {
@@ -4803,6 +4803,14 @@ ul.rp-bookmark-list li.rp-bookmark-item-odd {
 
 .rp-bookmark-title-wrap a.rp-bookmark-title:hover {
 	text-decoration: underline;
+}
+
+.rp-bookmark-more-info {
+	padding: 5px 10px 5px 16px;
+}
+
+.rp-bookmark-more-info p {
+	margin: 0.3em 0;
 }
 
 .rp-bookmark-item-minimized .rp-bookmark-more-info {
