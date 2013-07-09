@@ -28,6 +28,7 @@ AUI().add('rp-theme-2',function(A) {
                         
                         instance._initBreadcrumbs();
                         
+                        instance._initActionConfirmation();
                         instance._initNavigationButton();
                         instance._initMainNavigation();
                         instance._initOverlayLinks();
@@ -42,6 +43,13 @@ AUI().add('rp-theme-2',function(A) {
     
                     bindUI: function() {
                         var instance = this;
+                    },
+                    
+                    _initActionConfirmation: function() {
+                    	var instance = this;
+                    	
+            			var requiresConfirmationLinks = A.all('a.requires-confirmation');
+            			requiresConfirmationLinks.plug(A.Plugin.RpActionConfirmation);
                     },
                     
                     _initBreadcrumbs: function() {
@@ -246,6 +254,7 @@ AUI().add('rp-theme-2',function(A) {
         requires: [
 	       	'aui-base',
 	    	'event',
+	    	'rp-action-confirmation-plugin',
 	    	'rp-iframe-link-plugin',
 	    	'rp-knowledgebase',
 	    	'rp-navigation-button',

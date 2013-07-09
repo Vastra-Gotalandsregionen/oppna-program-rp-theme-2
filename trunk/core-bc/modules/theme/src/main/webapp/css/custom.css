@@ -2218,6 +2218,15 @@ li.vgr-list-view-item .hd h3 a:hover {
 	overflow: hidden;
 }
 
+/*------- RP Confirmation Plugin -------*/
+
+.js .requires-confirmation {
+	visibility: hidden;
+}
+
+.js .requires-confirmation-active {
+}
+
 /*----------------------------------------------------------------------
 =Liferay Components
 ----------------------------------------------------------------------*/
