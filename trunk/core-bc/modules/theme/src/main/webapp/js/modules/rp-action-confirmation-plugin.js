@@ -4,6 +4,11 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 		getClassName = A.ClassNameManager.getClassName,
 		NAME = 'rp-action-confirmation-plugin',
 		NS = 'rp-action-confirmation-plugin',
+		
+		DATA_CONFIRM_MSG = 'data-confirm-msg',
+		
+		TEXT_DEFAULT_MSG = '&Auml;r du s&auml;ker p&aring; att du vill g&ouml;ra detta?',
+		TEXT_DEFAULT_TITLE = '&Auml;r du s&auml;ker?',
 	
 		// Custom Attributes
 		WIDTH = 'width',
@@ -29,12 +34,24 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 
         prototype: {
         	dialog: null,
-        	dialogTitle: '',
+        	msg: '',
+        	url: '',
 
 			initializer: function() {
 				var instance = this;
 				
 				var host = instance.get(HOST);
+				
+				instance.url = host.getAttribute('href');
+				
+				if(host.hasAttribute(DATA_CONFIRM_MSG)) {
+					instance.msg = host.getAttribute(DATA_CONFIRM_MSG);
+				}
+				else {
+					instance.msg = TEXT_DEFAULT_MSG;
+				}
+				
+				//data-confirm-msg
 
 				instance._initLinks();
 			},
@@ -52,35 +69,32 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 			
 			_onHostClick: function(e) {
 				var instance = this;
+				
 				e.halt();
-
-				//alert('Should now launch a dialog');
 				
 				var width = 300;
-				var height = 200;
-				
-				var title = "Titel";
+				var height = 150;
 				
 				var dialog = new A.Dialog({
-					bodyContent: 'Lorem ipsum',
+					bodyContent: instance.msg,
 					centered: true,
-					cssClass: 'rp-iframe-dialog',
+					cssClass: 'rp-confirm-dialog',
 					align: { node: null, points: [A.WidgetPositionAlign.TC, A.WidgetPositionAlign.TC] },
 					destroyOnClose: true,
 					modal: true,
-					title: title,
+					title: TEXT_DEFAULT_TITLE,
 					resizable: false,
 					height: height,
 					width: width,
 					buttons: [{
-						text: 'OK',
-						handler: function() {
-							instance._confirmAction();
-						}
-					},{
-						text: 'Not OK',
+						text: 'Avbryt',
 						handler: function() {
 							instance._haltAction();
+						}
+					},{
+						text: 'Ja',
+						handler: function() {
+							instance._confirmAction();
 						}
 					}]
 				});
@@ -98,15 +112,14 @@ AUI.add('rp-action-confirmation-plugin', function(A) {
 				
 				// Should now continue with action
 				instance.dialog.close();
-				alert('Event should now continue');
+				if(instance.url != '') {
+					window.location.href = instance.url;	
+				}
 			},
 			
 			_haltAction: function () {
 				var instance = this;
-				
-				// Should now continue with action
 				instance.dialog.close();
-				alert('Event should now NOT continue');
 			},
 
 			_someFunction: function() {}
