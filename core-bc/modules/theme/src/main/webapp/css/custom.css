@@ -4796,23 +4796,35 @@ ul.recent-blog-entries li .extra {}
 
 /* ----------------- RP User Bookmarks Portlet ----------------------- */
 
-.rp-user-bookmarks {}
+.rp-user-bookmarks {
+}
 
 .rp-user-bookmarks .bookmark-controls-main {
 	margin: 0;
-	zoom: 1;
-}
-
-.rp-user-bookmarks .bookmark-controls-main .rp-link-button {
-	float: right;
-	margin: 0 0 0 10px;
-	position: relative;
 }
 
 .rp-user-bookmarks h2 {
 	color: #2f72a9;
 	font-size: 1.3em;
 	margin: 0.6em 0 0.6em 0;
+}
+
+.rp-bookmark-hd {
+	margin: 15px 0 10px 0;
+	overflow: hidden;
+}
+
+.rp-bookmark-hd h2 {
+	float: left;
+	margin: 0;
+	position: relative;
+}
+
+.rp-bookmark-hd .rp-link-button {
+	float: right;
+	margin: 0 0 0 10px;
+	position: static;
+	display: inline-block;
 }
 
 ul.rp-bookmark-list {
@@ -4832,11 +4844,6 @@ ul.rp-bookmark-list li {
 	position: relative;
 }
 
-.ie7 ul.rp-bookmark-list li,
-.ie8 ul.rp-bookmark-list li {
-	zoom: 1;
-}
-
 ul.rp-bookmark-list li.rp-bookmark-item-odd {
 	background: #fff;	
 }
@@ -4848,9 +4855,9 @@ ul.rp-bookmark-list li.rp-bookmark-item-odd {
 	display: block;
 	float: left;
 	font-size: 0;
-	height: 16px;
+	height: 18px;
 	text-indent: -9999em;
-	width: 16px;	
+	width: 18px;	
 }
 
 .rp-bookmark-item-minimized .rp-bookmark-title-toggle {
@@ -4863,7 +4870,8 @@ ul.rp-bookmark-list li.rp-bookmark-item-odd {
 
 .rp-bookmark-title-wrap a.rp-bookmark-title {
 	display: block;
-	margin: 0 40px 0 12px;
+	line-height: 18px;
+	margin: 0 40px 0 4px;
 	text-decoration: none;
 }
 
@@ -4881,6 +4889,7 @@ ul.rp-bookmark-list li.rp-bookmark-item-odd {
 
 .rp-bookmark-item-minimized .rp-bookmark-more-info {
 	display: none;
+	/*display: block;*/
 }
 
 .rp-bookmark-item-maximized .rp-bookmark-more-info {
@@ -4911,6 +4920,7 @@ ul.rp-bookmark-list li.rp-bookmark-item-odd {
 .rp-bookmark-controls a.rp-bookmark-delete {
 	background: transparent url(../images/common/close.png) 0 0 no-repeat;
 }
+
 
 /* Edit view */
 
